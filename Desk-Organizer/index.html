@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizador de Escritorio</title>
+  <link rel="stylesheet" href="styles.css"> 
+  
+  <!-- Incluir Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Organize your space</h1>
+    <button id="organize-button">Organize</button>
+  </header>
+
+  <main>
+    <section id="folders-header">
+      <h2>Tus carpetas</h2>
+      <div class="controls">
+        <button id="add-folder-button">Agregar carpeta</button>
+        <button id="sort-az-button">A-Z</button>
+      </div>
+    </section>
+    <!-- Contenedor donde se mostrarán las carpetas dinámicamente -->
+  <section id="folders-container" class="grid-view">
+</section>
+
+  </main>
+
+  <!-- Modal para agregar una nueva carpeta -->
+  <div id="add-folder-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Agregar nueva carpeta</h2>
+      <form id="add-folder-form">
+        <label for="folder-name">Nombre de carpeta:</label>
+        <input type="text" id="folder-name" name="folder-name" placeholder="Escribe el nombre para tu carpeta...." required>
+        
+        <label for="file-types">Tipos de archivos:</label>
+        <input type="text" id="file-types" name="file-types" placeholder="Tipos de archivo separados por coma...." required>
+        
+        <button type="submit">Agregar carpeta</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script> 
+</body>
+</html>
