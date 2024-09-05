@@ -1,0 +1,23 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "App para organizar escritorio.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonP2/Desk-Organizer.git"
+  },
+  "author": "Edoardo Samayoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonP2/Desk-Organizer/issues"
+  },
+  "homepage": "https://github.com/brandonP2/Desk-Organizer#readme",
+  "devDependencies": {
+    "electron": "^32.0.1"
+  }
+}
