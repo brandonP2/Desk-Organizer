@@ -69,3 +69,5 @@ Si haces cambios en el código y quieres probar, simplemente reinicia el servido
 
 - Si necesitas más dependencias de npm, agrégalas en el archivo `package.json`.
 - Si estás en un sistema Windows, asegúrate de usar `newenv\Scripts\activate` para activar el entorno virtual.
+- Se necesita hacer `npm install` dentro de la carpeta donde inicializaste el repositorio, luego tienes que instalar una libreria de node llamada `electron`.
+
